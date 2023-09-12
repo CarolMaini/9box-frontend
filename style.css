@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,600;1,6..12,400;1,6..12,500&family=Poppins:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300/400/500&display=swap');
 
 * {
     font-family: 'Nunito Sans', sans-serif;
@@ -14,9 +13,11 @@
     --body-color: #e4e9f7;
     --sidebar-color: #fff;
     --primary-color: #007bff;
+    --collor-wbtn: #63aeff6a;
     --primary-color-light: #f6f5ff;
     --toggle-color: #ddd;
-    --text-color: #707070;
+    --text-color: #707070e6;
+    --text-table: #7070703d;
     --text-color-dark: #000;
 
 
@@ -165,6 +166,12 @@ header .image-text .header-text {
     color: var(--sidebar-color);
 }
 
+@media (min-width: 900px) {}
+.container {
+    max-width: 1090px;
+    max-width: initial;
+}
+
 .home {
     position: relative;
     left: 250px;
@@ -182,7 +189,42 @@ header .image-text .header-text {
 
 .sidebar.close~.home {
     left: 88px;
+    width: 100%;
+    max-width: calc(100% - 88px);   
+}
+
+.sidebar.close~.sidebar {
+  width: calc(100% - 250px) !important;
+}
+
+.sidebar.close~.grafich {
+  left: 88px;
+  width: calc(100% - 88px);  
+}
+
+
+.sidebar.close~.recent--activity {
+    left: 88px;
     width: calc(100% - 88px);
+}
+
+
+
+
+.recent--activity {
+  display: flex;
+  position: relative;  
+  max-width: 290px !important;
+}
+
+.col--section {
+  display: flex;
+  margin-top: 260px;
+  }
+
+.grafich--position {
+position: relative;
+width: 143.5vh;
 }
 
 .navegation {
@@ -240,18 +282,9 @@ header .image-text .header-text {
     display: flex;
 }
 
-.dashboard .sales-card .card-icon {
+.sales-card .card-icon {
     /* color: #4154f1; */
     background: #f6f6fe;
-}
-
-.dashboard .card-icon {
-    font-size: 32px;
-    line-height: 0;
-    width: 64px;
-    height: 64px;
-    flex-shrink: 0;
-    flex-grow: 0;
 }
 
 .card-title {
@@ -268,18 +301,9 @@ header .image-text .header-text {
     font-weight: 400;
 }
 
-.dashboard .sales-card .card-icon {
+.sales-card .card-icon {
     /* color: #4154f1; */
     background: #f6f6fe;
-}
-
-.dashboard .card-icon {
-    font-size: 32px;
-    line-height: 0;
-    width: 64px;
-    height: 64px;
-    flex-shrink: 0;
-    flex-grow: 0;
 }
 
 .rounded-circle {
@@ -303,18 +327,9 @@ header .image-text .header-text {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: var(--collor-wbtn);
     /* background: #f6f6fe; */
     margin: 20px;
-}
-
-.dashboard .card-icon {
-    font-size: 32px;
-    line-height: 0;
-    width: 64px;
-    height: 64px;
-    flex-shrink: 0;
-    flex-grow: 0;
 }
 
 .filter {
@@ -322,4 +337,171 @@ header .image-text .header-text {
     justify-content: flex-end;
     margin: 10px;
     text-decoration: none;
+}
+
+/* Activity */
+.activity {
+    font-size: 14px;
+  }
+  
+  .activity .activity-item .activite-label {
+    color: #888;
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+    min-width: 64px;
+  }
+  
+  .activity .activity-item .activite-label::before {
+    content: "";
+    position: absolute;
+    right: -11px;
+    width: 4px;
+    top: 0;
+    bottom: 0;
+    background-color: #eceefe;
+  }
+  
+ .activity .activity-item .activity-badge {
+    margin-top: 3px;
+    z-index: 1;
+    font-size: 11px;
+    line-height: 0;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 3px solid #fff;
+    flex-grow: 0;
+  }
+  
+  .activity .activity-item .activity-content {
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .activity .activity-item:first-child .activite-label::before {
+    top: 5px;
+  }
+  
+  .activity .activity-item:last-child .activity-content {
+    padding-bottom: 0;
+  }
+  
+  /* News & Updates */
+  .news .post-item+.post-item {
+    margin-top: 15px;
+  }
+  
+  .news img {
+    width: 80px;
+    float: left;
+    border-radius: 5px;
+  }
+  
+  .news h4 {
+    font-size: 15px;
+    margin-left: 95px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .news h4 a {
+    color: #012970;
+    transition: 0.3s;
+  }
+  
+  .news h4 a:hover {
+    color: #4154f1;
+  }
+  
+  .news p {
+    font-size: 14px;
+    color: #777777;
+    margin-left: 95px;
+  }
+  
+  /* Recent Sales */
+  .recent-sales {
+    font-size: 14px;
+  }
+  
+  .recent-sales .table thead {
+    background: #f6f6fe;
+  }
+  
+  .recent-sales .table thead th {
+    border: 0;
+  }
+  
+  .recent-sales .dataTable-top {
+    padding: 0 0 10px 0;
+  }
+  
+  .recent-sales .dataTable-bottom {
+    padding: 10px 0 0 0;
+  }
+  
+  /* Top Selling */
+  .top-selling {
+    font-size: 14px;
+  }
+  
+  .top-selling .table thead {
+    background: #f6f6fe;
+  }
+  
+  .top-selling .table thead th {
+    border: 0;
+  }
+  
+  .top-selling .table body td {
+    vertical-align: middle;
+  }
+  
+  .top-selling img {
+    border-radius: 5px;
+    max-width: 60px;
+  }
+
+  .card-body {
+    padding: 0 20px 20px 20px;
+  }
+
+
+.lateral   {
+    display: flex;
+    justify-items: end;
+    justify-content: end;
+    height: 600px;
+    border: none !important;    
+}
+
+.card--lateral {
+    display: flex;
+    justify-content: end;
+    justify-items: end;
+    width: 290px;
+}
+ 
+ .col--table {
+    background-color: var(--sidebar-color);
+    left: 500px;
+    height: 400px;
+    width: 845px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .color--table {
+  background: var(--collor-wbtn);
+  }
+
+  tr:hover {
+  background-color: var(--collor-wbtn)
+  }
+
+  footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sidebar-color);
 }
