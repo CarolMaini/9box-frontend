@@ -6,5 +6,3 @@ const body = document.querySelector("body"),
         sidebar.classList.toggle("close");
         sidebar.querySelector(".image").classList.toggle("min");
     });
-
-console.log("javascript")
