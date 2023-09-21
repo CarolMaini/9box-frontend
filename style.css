@@ -30,13 +30,24 @@
 }
 
 body {
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 88px auto;
+    grid-template-rows: calc(100% - 100px) 100px/auto ;
+    width: 100%;
+    min-height: 100vh;
     background-color: var(--body-color);
+    transition: var(--tran-05);
 }
+
+.bodyClose {
+  grid-template-columns: 250px auto;
+  transition: var(--tran-05);
+}
+
 
 /*======Sidebar======*/
 .sidebar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     height: 100%;
@@ -61,9 +72,8 @@ body {
 }
 
 .sidebar.close .text {
-    opacity: 0;
+    display: none;
 }
-
 
 .sidebar .image {
     min-width: 70px;
@@ -101,7 +111,6 @@ body {
 
 .sidebar header {
     position: relative;
-
 }
 
 .sidebar .image-text img {
@@ -166,18 +175,32 @@ header .image-text .header-text {
     color: var(--sidebar-color);
 }
 
-@media (min-width: 900px) {}
-.container {
-    max-width: 1090px;
-    max-width: initial;
+/* === conteudo === */
+
+.conteudo {
+  display: grid;  
+  grid-template-rows: auto 1fr auto;  
 }
 
-.home {
-    position: relative;
-    left: 250px;
-    height: 100px;
-    width: calc(100% - 250px);
-    transition: var(--tran-05);
+.conteiner {
+    display: grid;
+    grid-template-columns: 60% auto;
+  }
+
+.small-cards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grafich {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+
+.home {   
+   height: 100%;  
+   transition: var(--tran-05);
 }
 
 .home .text {
@@ -188,9 +211,8 @@ header .image-text .header-text {
 }
 
 .sidebar.close~.home {
-    left: 88px;
-    width: 100%;
-    max-width: calc(100% - 88px);   
+    left: 88px;   
+       
 }
 
 .sidebar.close~.sidebar {
@@ -199,7 +221,7 @@ header .image-text .header-text {
 
 .sidebar.close~.grafich {
   left: 88px;
-  width: calc(100% - 88px);  
+  width: calc(100% - 88px); 
 }
 
 
@@ -208,8 +230,9 @@ header .image-text .header-text {
     width: calc(100% - 88px);
 }
 
-
-
+.closeIcons {
+  width: auto !important;
+}
 
 .recent--activity {
   display: flex;
@@ -217,14 +240,10 @@ header .image-text .header-text {
   max-width: 290px !important;
 }
 
-.col--section {
-  display: flex;
-  margin-top: 260px;
-  }
 
 .grafich--position {
 position: relative;
-width: 143.5vh;
+width:auto;
 }
 
 .navegation {
@@ -279,7 +298,9 @@ width: 143.5vh;
 }
 
 .cards {
-    display: flex;
+  display: grid;
+  ;
+  align-content: space-between;
 }
 
 .sales-card .card-icon {
@@ -484,9 +505,9 @@ width: 143.5vh;
  
  .col--table {
     background-color: var(--sidebar-color);
-    left: 500px;
-    height: 400px;
-    width: 845px;
+    /* left: 500px;
+    height: 400px; */
+    /* width: 845px; */
     border-radius: 5px;
     padding: 10px;
   }
@@ -499,9 +520,12 @@ width: 143.5vh;
   background-color: var(--collor-wbtn)
   }
 
-  footer {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--sidebar-color);
+  grid-column-start: 1;
+  grid-column-end: -1;
+  height: 80px;
 }
