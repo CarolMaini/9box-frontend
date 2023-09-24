@@ -10,7 +10,7 @@
 
 :root {
     /*======colors======*/
-    --body-color: #e4e9f7;
+    --body-color: #EEEEEE;
     --sidebar-color: #fff;
     --primary-color: #007bff;
     --collor-wbtn: #63aeff6a;
@@ -32,10 +32,10 @@
 body {
     display: grid;
     grid-template-columns: 88px auto;
-    grid-template-rows: calc(100% - 100px) 100px/auto ;
+    grid-template-rows: calc(100% - 100px) 100px auto ;
     width: 100%;
     min-height: 100vh;
-    background-color: var(--body-color);
+    background-color: var(--body-color) !important;
     transition: var(--tran-05);
 }
 
