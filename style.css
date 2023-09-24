@@ -206,7 +206,7 @@ header .image-text .header-text {
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color-dark);
-    padding: 18px 40px;
+    padding: 18px 20px;
 }
 
 .sidebar.close~.home {
@@ -275,16 +275,6 @@ width:auto;
 .dropdown--nav a:hover {
     text-decoration: none;
     color: var(--text-color) !important;
-}
-
-.navegation--pag {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 40px;
-    margin-top: -30px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 15px;
-    color: var(--text-color);
 }
 
 .card-header {
