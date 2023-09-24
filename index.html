@@ -331,19 +331,20 @@
 
       <section class="cards m-3" style="border-radius: 5px;">
         <div class="col--table shadow">
-          <div class="filter">
-            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots btn--icon"></i></a>
-            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-              <li><a class="dropdown-item" href="#">Hoje</a></li>
-              <li><a class="dropdown-item" href="#">Mês</a></li>
-              <li><a class="dropdown-item" href="#">Ano</a></li>
-            </ul>
+          <div class="d-flex justify-content-between mb-4">
+            <button type="button" class="btn btn-outline-primary">Exportar</button>
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots btn--icon"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li><a class="dropdown-item" href="#">Hoje</a></li>
+                <li><a class="dropdown-item" href="#">Mês</a></li>
+                <li><a class="dropdown-item" href="#">Ano</a></li>
+              </ul>
+            </div>
           </div>
 
+          <h3 class="text p-0 mb-3" style="color: var(--text-color); justify-content: start;">Listagem de Avaliações</h3>
           <table class="table">
-            <button type="button" class="btn btn-outline-primary"
-              style="display: flex; margin: 0px 40px 10px 40px;">Exportar</button>
-            <span class="text" style="color: var(--text-color); justify-content: start;">Listagem de Avaliações</span>
             <thead>
               <tr>
                 <th scope="col">#</th>
