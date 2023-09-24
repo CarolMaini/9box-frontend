@@ -44,7 +44,6 @@ body {
   transition: var(--tran-05);
 }
 
-
 /*======Sidebar======*/
 .sidebar {
     /* position: fixed; */
@@ -255,12 +254,13 @@ width:auto;
     display: flex;
     justify-content: end;
     align-items: center;
+    height: 100%;
 }
 
 .user--name--nav {
     display: flex;
     margin-bottom: inherit;
-    padding: 7px;
+    padding: 0 20px 0 16px;
 }
 
 .dropdown--nav--list {
