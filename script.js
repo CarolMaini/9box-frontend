@@ -12,3 +12,17 @@ toggle.addEventListener("click", () => {
         element.classList.toggle("closeIcons");
     });
 });
+
+const colors = {
+  'backgroundColor': '--body-color',
+  'sidebarColor': '--sidebar-color',
+  'cardColor': '--card-color',
+}
+
+const root = document.documentElement;
+document.querySelectorAll('input[type="color"]').forEach(e => (
+  e.addEventListener('input', function () {
+    const corEscolhida = this.value;
+    root.style.setProperty(colors[e.id], corEscolhida);
+  })
+));

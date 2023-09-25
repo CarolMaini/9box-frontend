@@ -12,6 +12,7 @@
     /*======colors======*/
     --body-color: #EEEEEE;
     --sidebar-color: #fff;
+    --card-color: #fff;
     --primary-color: #007bff;
     --collor-wbtn: #63aeff6a;
     --primary-color-light: #f6f5ff;
@@ -250,6 +251,10 @@ width:auto;
     justify-content: center;
 }
 
+nav {
+  background-color: var(--sidebar-color);
+}
+
 .dropdown--nav {
     display: flex;
     justify-content: end;
@@ -289,8 +294,8 @@ width:auto;
 
 .cards {
   display: grid;
-  ;
   align-content: space-between;
+  background-color: var(--card-color);
 }
 
 .sales-card .card-icon {
@@ -494,7 +499,7 @@ width:auto;
 }
  
  .col--table {
-    background-color: var(--sidebar-color);
+    background-color: var(--element-color);
     /* left: 500px;
     height: 400px; */
     /* width: 845px; */
@@ -518,4 +523,17 @@ footer {
   grid-column-start: 1;
   grid-column-end: -1;
   height: 80px;
+}
+
+.modal-content {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--card-color) !important;
+}
+
+input[type="color"] {
+  width: 25% !important;
 }
