@@ -17,6 +17,8 @@ const colors = {
   'backgroundColor': '--body-color',
   'sidebarColor': '--sidebar-color',
   'cardColor': '--card-color',
+  'textColor': '--text-color',
+  'iconColor': '--icon-color',
 }
 
 const root = document.documentElement;

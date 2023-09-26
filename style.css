@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,600;1,6..12,400;1,6..12,500&family=Poppins:wght@300;400;500&display=swap');
 
 * {
-    font-family: 'Nunito Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--text-color);
 }
 
 :root {
@@ -17,9 +17,10 @@
     --collor-wbtn: #63aeff6a;
     --primary-color-light: #f6f5ff;
     --toggle-color: #ddd;
-    --text-color: #707070e6;
+    --text-color: #000;
     --text-table: #7070703d;
     --text-color-dark: #000;
+    --icon-color: #007bff;
 
 
     /*======transition======*/
@@ -47,7 +48,6 @@ body {
 
 /*======Sidebar======*/
 .sidebar {
-    /* position: fixed; */
     top: 0;
     left: 0;
     height: 100%;
@@ -167,7 +167,7 @@ header .image-text .header-text {
 }
 
 .sidebar li .link-form:hover {
-    background: var(--primary-color);
+    background: var(--icon-color);
 }
 
 .sidebar li .link-form:hover .icon,
@@ -307,12 +307,10 @@ nav {
     padding: 20px 0 15px 0;
     font-size: 18px;
     font-weight: 500;
-    color: #012970;
     font-family: "Poppins", sans-serif;
 }
 
 .card-title span {
-    color: #899bbd;
     font-size: 14px;
     font-weight: 400;
 }
