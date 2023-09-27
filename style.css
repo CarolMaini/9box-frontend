@@ -28,20 +28,22 @@
     --tran-04: all 0.4s ease;
     --tran-05: all 0.5s ease;
     --border-radius: 3px;
+    --sidebar-size: 200px;
+    --sidebar-close-size: 60px;
 
 }
 
 body {
     display: grid;
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: 50px auto;
     width: 100%;
     min-height: 100vh;
     background-color: var(--body-color) !important;
     transition: var(--tran-05);
 }
 
-.sidebar-close {
-  grid-template-columns: 250px auto !important;
+.sidebar-open {
+  grid-template-columns: var(--sidebar-size) auto !important;
   transition: var(--tran-05);
 }
 
@@ -50,15 +52,15 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
+    width: var(--sidebar-size);
     background: var(--sidebar-color);
-    padding: 15px 18px;
+    padding: 15px 0px;
     transition: var(--tran-05);
     z-index: 100;
 }
 
 .sidebar.close {
-    width: 88px
+    width: var(--sidebar-close-size);
 }
 
 .sidebar .text {
@@ -80,7 +82,6 @@ body {
 
 .sidebar li {
     height: 50px;
-    margin-top: 10px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -90,7 +91,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 60px;
     font-size: 20x;
 }
 
@@ -98,7 +98,10 @@ body {
 .sidebar li .text {
     color: var(--text-color);
     transition: var(--tran-02);
+}
 
+.close li .link-form {
+  justify-content: center;
 }
 
 .sidebar header {
@@ -126,7 +129,7 @@ header .image-text .header-text {
 .sidebar header .toggle {
     position: absolute;
     top: 50%;
-    right: -35px;
+    right: -17px;
     transform: translateY(-50%) rotate(180deg);
     height: 35px;
     width: 35px;
@@ -149,9 +152,12 @@ header .image-text .header-text {
     width: 100%;
     display: flex;
     align-items: center;
-    border-radius: 4px;
     text-decoration: none;
     transition: var(--tran-04);
+}
+
+.sidebar-open li .link-form {
+  padding-left: 10px;
 }
 
 .sidebar li .link-form:hover {
@@ -188,21 +194,19 @@ header .image-text .header-text {
 
 .home {
   display: grid;
-  grid-template-columns: 88px auto;
+  grid-template-columns: var(--sidebar-close-size) auto;
   height: 100%;  
   transition: var(--tran-05);
 }
 
 .home .text {
-    font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-color-dark);
     padding: 18px 20px;
 }
 
 .sidebar.close~.home {
-    left: 88px;   
-       
+    left: 88px;
 }
 
 .sidebar.close~.sidebar {
@@ -218,10 +222,6 @@ header .image-text .header-text {
 .sidebar.close~.recent--activity {
     left: 88px;
     width: calc(100% - 88px);
-}
-
-.closeIcons {
-  width: auto !important;
 }
 
 .recent--activity {
@@ -289,7 +289,6 @@ nav {
 }
 
 .sales-card .card-icon {
-    /* color: #4154f1; */
     background: #f6f6fe;
 }
 
@@ -306,7 +305,6 @@ nav {
 }
 
 .sales-card .card-icon {
-    /* color: #4154f1; */
     background: #f6f6fe;
 }
 
@@ -332,7 +330,6 @@ nav {
     width: 60px;
     border-radius: 50%;
     background-color: var(--collor-wbtn);
-    /* background: #f6f6fe; */
     margin: 20px;
 }
 
@@ -488,9 +485,6 @@ nav {
  
  .col--table {
     background-color: var(--element-color);
-    /* left: 500px;
-    height: 400px; */
-    /* width: 845px; */
     border-radius: 5px;
     padding: 10px;
   }
@@ -507,7 +501,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--sidebar-color);
+  background-color: var(--body-color);
   grid-column-start: 1;
   grid-column-end: -1;
 }

@@ -5,12 +5,8 @@ const sidebarIcons = sidebar.querySelectorAll("a.link-form");
 const toggle = body.querySelector(".toggle");
 
 toggle.addEventListener("click", () => {
-    home.classList.toggle("sidebar-close")
+    home.classList.toggle("sidebar-open")
     sidebar.classList.toggle("close");
-    
-    sidebarIcons.forEach(element => {
-        element.classList.toggle("closeIcons");
-    });
 });
 
 const colors = {
