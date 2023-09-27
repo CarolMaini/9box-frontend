@@ -34,7 +34,6 @@
 body {
     display: grid;
     grid-template-columns: 88px auto;
-    grid-template-rows: calc(100% - 100px) 100px auto ;
     width: 100%;
     min-height: 100vh;
     background-color: var(--body-color) !important;
@@ -534,4 +533,25 @@ footer {
 
 input[type="color"] {
   width: 25% !important;
+}
+
+.dropdown-menu {
+  background-color: var(--card-color) !important;
+}
+
+.dropdown-item {
+  color: var(--text-color) !important;
+}
+
+.fixed-color {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.btn-close {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
 }

@@ -108,38 +108,36 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="alterarCorModalLabel">Alterar Cor</h5>
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <h5 class="modal-title fixed-color" id="alterarCorModalLabel">Alterar Cor</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="backgroundColor">Cor de fundo:</label>
+                <label class="fixed-color" for="backgroundColor">Cor de fundo:</label>
                 <input type="color" class="form-control" id="backgroundColor" placeholder="RGB: #000000">
               </div>
               <div class="form-group">
-                <label for="sidebarColor">Cor do Menu:</label>
+                <label class="fixed-color" for="sidebarColor">Cor do Menu:</label>
                 <input type="color" class="form-control" id="sidebarColor">
               </div>
               <div class="form-group">
-                <label for="cardColor">Cor dos Cards:</label>
+                <label class="fixed-color" for="cardColor">Cor dos Cards:</label>
                 <input type="color" class="form-control" id="cardColor">
               </div>
               <div class="form-group">
-                <label for="textColor">Cor do texto:</label>
+                <label class="fixed-color" for="textColor">Cor do texto:</label>
                 <input type="color" class="form-control" id="textColor">
               </div>
               <div class="form-group">
-                <label for="iconColor">Cor dos Ícones:</label>
+                <label class="fixed-color" for="iconColor">Cor dos Ícones:</label>
                 <input type="color" class="form-control" id="iconColor">
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Salvar</button>
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Salvar</button>
           </div>
         </div>
       </div>
