@@ -42,6 +42,13 @@ body {
     transition: var(--tran-05);
 }
 
+body > nav {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 100;
+}
+
 .sidebar-open {
   grid-template-columns: var(--sidebar-size) auto !important;
   transition: var(--tran-05);
@@ -49,14 +56,13 @@ body {
 
 /*======Sidebar======*/
 .sidebar {
-    top: 0;
-    left: 0;
+    position: fixed;
+    top: 50px;
     height: 100%;
     width: var(--sidebar-size);
     background: var(--sidebar-color);
     padding: 15px 0px;
     transition: var(--tran-05);
-    z-index: 100;
 }
 
 .sidebar.close {
@@ -128,9 +134,9 @@ header .image-text .header-text {
 
 .sidebar header .toggle {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: -17px;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-40%) rotate(180deg);
     height: 35px;
     width: 35px;
     background: var(--primary-color);
@@ -144,7 +150,7 @@ header .image-text .header-text {
 }
 
 .sidebar.close header .toggle {
-    transform: translateY(-50%);
+    transform: translateY(-40%);
 }
 
 .sidebar li .link-form {
