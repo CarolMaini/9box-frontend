@@ -28,6 +28,7 @@
     --tran-03: all 0.3s ease;
     --tran-04: all 0.4s ease;
     --tran-05: all 0.5s ease;
+    --border-radius: 3px;
 
 }
 
@@ -554,4 +555,12 @@ input[type="color"] {
   padding: 0;
   cursor: pointer;
   font-family: inherit;
+}
+
+.conteudo > * {
+  border-radius: var(--border-radius);
+}
+
+.conteiner .card {
+  border-radius: var(--border-radius) !important;
 }
