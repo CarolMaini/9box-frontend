@@ -1,12 +1,12 @@
 const body = document.querySelector("body");
+const home = document.querySelector(".home")
 const sidebar = body.querySelector(".sidebar");
 const sidebarIcons = sidebar.querySelectorAll("a.link-form");
 const toggle = body.querySelector(".toggle");
 
 toggle.addEventListener("click", () => {
-    body.classList.toggle("bodyClose")
+    home.classList.toggle("sidebar-close")
     sidebar.classList.toggle("close");
-    sidebar.querySelector(".image").classList.toggle("min");
     
     sidebarIcons.forEach(element => {
         element.classList.toggle("closeIcons");

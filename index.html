@@ -26,82 +26,31 @@
 </head>
 
 <body>
-  <nav class="sidebar close border-end">
-    <header>
-      <div class="image-text">
-        <span class="image">
-          <img src="logo-fundo-transparente-novo_P6GmKNt.png" alt="Icone-do-Site-Platinum">
-        </span>
-      </div>
-      <i class='bx bx-menu toggle'></i>
-    </header>
-
-    <div class="menu-bar">
-      <div class="menu">
-        <ul class="menu-links" style="padding-left: 0 !important;">
-          <li class="nav-link">
-            <a class="link-form closeIcons" href="#">
-              <i class='bi bi-house icon'></i>
-              <span class="text nav-text">Home</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a class="link-form closeIcons" href="#">
-              <i class="bi bi-graph-up icon"></i>
-              <span class="text nav-text">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a class="link-form closeIcons" href="#">
-              <i class='bx bx-brain icon'></i>
-              <span class="text nav-text">PDI</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a class="link-form closeIcons" href="#">
-              <i class='bi bi-file-earmark-text icon'></i>
-              <span class="text nav-text">Relatório</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a class="link-form closeIcons" href="#">
-              <i class='bi bi-sliders2 icon'></i>
-              <span class="text nav-text">Calibração</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a class="link-form closeIcons" href="#">
-              <i class="bi bi-house-gear icon"></i>
-              <span class="text nav-text">Painel Admin</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+  <nav class="d-flex justify-content-between border-bottom" style="height: 50px;">
+    <div class="image-text">
+      <span class="image">
+        <img src="logo-fundo-transparente-novo_P6GmKNt.png" height="100%" alt="Icone-do-Site-Platinum">
+      </span>
     </div>
-  </nav>
-
-  <section class="home">
-    <nav class="mb-3 border-bottom" style="height: 50px;">
-      <div class="dropdown--nav" href="#">
-        <a class="dropdown--nav--list" href="#" role="" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="btn btn-"></span>
-          <span class="user--name--nav"><strong><i class="bi bi-gear-fill"></i></strong></span>
-        </a>
-        <ul class="dropdown-menu">
-          <li class="list--menu--nav">
-            <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#alterarCorModal">
-              <i class="bi bi-palette" style="margin-right: 10px;"></i>Alterar Cor
-            </button>
-          </li>
-          <li class="list--menu--nav"><a class="dropdown-item" style="display: flex; justify-content: flex-start;" href="#">
-              <i class="bi bi-pencil" style="margin-right: 10px;"></i>Trocar Senha</a>
-          </li>
-          <li class="list--menu--nav"><a class="dropdown-item" style="display: flex; justify-content: flex-start;" href="#">
-              <i class="bi bi-box-arrow-right" style="margin-right: 10px;"></i>Logout</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="dropdown--nav" href="#">
+      <a class="dropdown--nav--list" href="#" role="" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="btn btn-"></span>
+        <span class="user--name--nav"><strong><i class="bi bi-gear-fill"></i></strong></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="list--menu--nav">
+          <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#alterarCorModal">
+            <i class="bi bi-palette" style="margin-right: 10px;"></i>Alterar Cor
+          </button>
+        </li>
+        <li class="list--menu--nav"><a class="dropdown-item" style="display: flex; justify-content: flex-start;" href="#">
+            <i class="bi bi-pencil" style="margin-right: 10px;"></i>Trocar Senha</a>
+        </li>
+        <li class="list--menu--nav"><a class="dropdown-item" style="display: flex; justify-content: flex-start;" href="#">
+            <i class="bi bi-box-arrow-right" style="margin-right: 10px;"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- Modal de Alteração de Cor -->
     <div class="modal fade" id="alterarCorModal" tabindex="-1" aria-labelledby="alterarCorModalLabel" aria-hidden="true">
@@ -141,15 +90,66 @@
           </div>
         </div>
       </div>
-    </div> 
-
-    <section style="margin-left: 20px;">
-      <h1>Home</h1>
-      <p class="ms-1">Home / &nbsp;<strong>Dashboard</strong></p>
-    </section>
-
+    </div>
+    <!-- Fim Modal de Alteração de Cor -->
+  </nav>
+  
+  <section class="home">
+    <nav class="sidebar close border-end">
+      <header>
+        <i class='bx bx-menu toggle'></i>
+      </header>
+  
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links" style="padding-left: 0 !important;">
+            <li class="nav-link">
+              <a class="link-form closeIcons" href="#">
+                <i class='bi bi-house icon'></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="link-form closeIcons" href="#">
+                <i class="bi bi-graph-up icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="link-form closeIcons" href="#">
+                <i class='bx bx-brain icon'></i>
+                <span class="text nav-text">PDI</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="link-form closeIcons" href="#">
+                <i class='bi bi-file-earmark-text icon'></i>
+                <span class="text nav-text">Relatório</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="link-form closeIcons" href="#">
+                <i class='bi bi-sliders2 icon'></i>
+                <span class="text nav-text">Calibração</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="link-form closeIcons" href="#">
+                <i class="bi bi-house-gear icon"></i>
+                <span class="text nav-text">Painel Admin</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
     <!-- === Conteudo ==== -->
     <div class="conteudo">
+      <section style="margin-left: 20px;">
+        <h1>Home</h1>
+        <p class="ms-1">Home / &nbsp;<strong>Dashboard</strong></p>
+      </section>
       <div class="conteiner">
         <section class="small-cards" id="">
           <div class="row" style="margin: 5px;">
@@ -303,13 +303,13 @@
               </div>
 
               <div class="card-body pb-0">
-                <h5 class="card-title">Atividades Recentes<span>| Hoje</span></h5>
+                <h5 class="card-title">Atividades Recentes<span> | Hoje</span></h5>
 
                 <div class="activity">
 
                   <div class="activity-item d-flex">
                     <div class="activite-label">32 min</div>
-                    <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
+                    <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
                     <div class="activity-content">
                       Realizada Avaliação de <a href="#" class="fw-bold text-dark">Fernana Nascimento</a>
                     </div>
@@ -319,7 +319,7 @@
 
                   <div class="activity-item d-flex">
                     <div class="activite-label">56 min</div>
-                    <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
+                    <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
                     <div class="activity-content">
                       Uma Avaliação Penente
                     </div>
@@ -329,7 +329,7 @@
 
                   <div class="activity-item d-flex">
                     <div class="activite-label">2 hrs</div>
-                    <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
+                    <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
                     <div class="activity-content">
                       Alteração realizada no Relatório
                     </div>
@@ -338,7 +338,7 @@
 
                   <div class="activity-item d-flex">
                     <div class="activite-label">1 dia</div>
-                    <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
+                    <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
                     <div class="activity-content">
                       Uma nova atualização no Grupo<a href="#" class="fw-bold text-dark">Relatório</a>
                     </div>
@@ -347,7 +347,7 @@
 
                   <div class="activity-item d-flex">
                     <div class="activite-label">2 dias</div>
-                    <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
+                    <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
                     <div class="activity-content">
                       Uma nova Avaliação
                     </div>
@@ -370,7 +370,7 @@
 
       </div>
 
-      <section class="cards m-3">
+      <section class="card m-3">
         <div class="col--table shadow">
           <div class="d-flex justify-content-between mb-4">
             <button type="button" class="btn btn-outline-primary">Exportar</button>

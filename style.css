@@ -20,8 +20,7 @@
     --text-color: #000;
     --text-table: #7070703d;
     --text-color-dark: #000;
-    --icon-color: #007bff;
-
+    --icon-color: #00000033;
 
     /*======transition======*/
     --tran-03: all 0.2s ease;
@@ -34,15 +33,15 @@
 
 body {
     display: grid;
-    grid-template-columns: 88px auto;
+    grid-template-rows: 50px auto 50px;
     width: 100%;
     min-height: 100vh;
     background-color: var(--body-color) !important;
     transition: var(--tran-05);
 }
 
-.bodyClose {
-  grid-template-columns: 250px auto;
+.sidebar-close {
+  grid-template-columns: 250px auto !important;
   transition: var(--tran-05);
 }
 
@@ -73,13 +72,6 @@ body {
 
 .sidebar.close .text {
     display: none;
-}
-
-.sidebar .image {
-    min-width: 70px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
 }
 
 .min {
@@ -113,13 +105,9 @@ body {
     position: relative;
 }
 
-.sidebar .image-text img {
-    width: 70%;
-}
 
-.sidebar header .image-text {
-    display: flex;
-    align-items: center;
+.image-text {
+  padding: 5px;
 }
 
 header .image-text .header-text {
@@ -198,9 +186,11 @@ header .image-text .header-text {
 }
 
 
-.home {   
-   height: 100%;  
-   transition: var(--tran-05);
+.home {
+  display: grid;
+  grid-template-columns: 88px auto;
+  height: 100%;  
+  transition: var(--tran-05);
 }
 
 .home .text {
@@ -520,7 +510,6 @@ footer {
   background-color: var(--sidebar-color);
   grid-column-start: 1;
   grid-column-end: -1;
-  height: 80px;
 }
 
 .modal-content {
@@ -561,6 +550,6 @@ input[type="color"] {
   border-radius: var(--border-radius);
 }
 
-.conteiner .card {
+.card {
   border-radius: var(--border-radius) !important;
 }
